@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+body {
+  /* background: #ff6800; */
+  background: #ffff00;
+  color: #000;
+  font: 400 16px/22px "Yanone Kaffeesatz", Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Сетка
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.main-info-page {
+  margin: 0 auto;
+}
+.container 
+{
+  width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-info-page {
+  width: 1200px;
+  padding: 25px 10px;
+}
+.col-1-2,
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Ccылки
+  ========================================
+*/
+
+a {
+  text-decoration: none;
+  color: #525252
+}
+.info-col a .press {
+  text-decoration: underline;
+}
+a:hover {
+  color: #f00;
+}
+
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.logo {
+  font: 400 48px/24px "Chilanka", cursive;
+  float: left;
+  padding: 70px, 0, 10px, 0;
+  margin-bottom: 50px;
+  line-height: 60px;
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+.tagline {
+  color: #525252;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 40px 0;
+  text-align: right;
+}
+.nav {
+  text-align: right;
+  font-size: 32px;
+  padding-top: 45px;
+  text-transform: uppercase;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  Главная 
+  ========================================
+*/
+.info-center h2 {
+  text-align: center;
+  font-size: 42px;
+  padding: 40px 0;
+}
+.info-center p {
+  text-align: left;
+  font-size: 26px;
+  line-height: 1.5em;
+  padding-bottom: 25px;
+}
+em {
+  font: 400 26px/24px "Chilanka", cursive;
+  color: #f00;
+}
+/*
+  ========================================
+  Информация в колонках
+  ========================================
+*/
+.info-col h3 {
+  text-align: center;
+  font-size: 36px;
+  padding: 20px 0;
+}
+
+.info-col h4 {
+  text-align: left;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.info-col p {
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 20px 0;
+}
+.info-col img {
+  border: 3px solid black;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+
+.info-col aside img {
+  border: none;
+  width: 70%;
+}
+
+.info-col iframe {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+/*
+  ========================================
+  Locations
+  ========================================
+*/
+
+/* .info-basket-cort h3 {
+  text-align: left;
+  font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.info-basket-cort p {
+  text-align: left;
+  padding: 20px 0;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+.info-basket-cort iframe {
+  width: 50%;
+} */
+
+/*
+  ========================================
+  Регистрация
+  ========================================
+*/
+
+.reason-list {
+  
+  list-style-type: decimal;
+  font-size: 24px;
+}
+form {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-size: 24px;
+}
+.info-register {
+  display: block;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px  "Yanone Kaffeesatz", Arial, sans-serif;
+}
+.info-register label {
+  color: #525252;
+  cursor: pointer;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+.info-register input,
+.info-register select,
+.info-register textarea,
+.info-register button {
+  border: 1px solid #8f9092;
+  border-radius: 5px;
+  color: #474747;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 27px;
+  padding: 5px 8px;
+}
+.info-register input,
+.info-register textarea {
+  width: 50%;
+  
+}
+.info-register select {
+  height: 34px;
+  width: 73px;
+}
+.info-register textarea {
+  height: 70px;
+  resize: none;
+}
+
+.info-register button {
+  background: #ffff00;
+} 
+.info-register button:hover {
+  background: #f00;
+  color: #000;
+} 
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer-setting {
+  color: #525252;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer-settings small {
+  float: left;
+  font-weight: 300;
+  letter-spacing: 2em;
+}
+
+.footer-setting .nav {
+  float: right;
+  padding-top: 0;
+  font-size: 24px;
+}
+/* .footer-setting .nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.footer-setting .nav li:last-child {
+  margin-right: 0;
+} */
+
+/*
+  ========================================
+  Полосы
+  ========================================
+*/
+
+.row {
+  min-width: 1200px;
+  background: #fff;
+  /* background: -webkit-linear-gradient(to right, #9a2d0b,  #ff6800);
+  background:    -moz-linear-gradient(to right, #9a2d0b,  #ff6800);
+  background:         linear-gradient(to right, #9a2d0b,  #ff6800); */
+}
+
+.row-mini {
+  background: #ff6800;
+  min-width: 1200px;
+  height: 5px;
+  /* background: -webkit-radial-gradient(#fff,  #ff6800);
+  background:    -moz-radial-gradient(#fff,  #ff6800);
+  background:         radial-gradient(#fff,  #ff6800); */
+} 
+
+/*
+  ========================================
+  Таблицы
+  ========================================
+*/
+
+table {
+  table-layout: fixed;
+  margin: 20px 20px;
+  width: 400px;
+  height: auto;
+}
+
+td {
+  border: 1px solid #000;
+  
+  /* height: 40px; */
+  /* padding: 10px 10px; */
+}
